@@ -107,7 +107,8 @@ main{
 }
 
 .hero-content{
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     animation: text_arrivee 1s ease;
 }
 
@@ -245,7 +246,8 @@ footer{
 }
 
 .about_content{
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 
     background-color: rgba(255, 111, 0, 0.203);
 
@@ -259,4 +261,93 @@ footer{
 
 .about_content h2{
     color: #000000;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    nav > a {
+        flex: initial;
+    }
+
+    .menu {
+        position: static;
+        transform: none;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero,
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-content,
+    .about_content {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .photo,
+    .about_photo {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .bubble {
+        display: none;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .hero,
+    .about {
+        padding: 60px;
+        gap: 40px;
+    }
+
+    .hero-content,
+    .about_content {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .photo {
+        max-width: 450px;
+    }
+
+    .about_photo {
+        width: 350px;
+    }
+
+    .hero-content h1 {
+        font-size: 70px;
+    }
 }
