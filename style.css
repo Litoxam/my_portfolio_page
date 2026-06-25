@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.5), rgba(231, 231, 231, 0.5)),
+        url("./assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ---------- HEADER ---------- */
+
+header{
+    width: 100%;
+}
+
+nav{
+    background: rgba(255, 255, 255, 0.15);
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    height: 150px;
+    padding: 0 40px;
+}
+
+nav > a{
+    flex: 1;
+}
+
+/* ---------- LOGO ---------- */
+
+.logo{
+    width:280px;
+    height:auto;
+}
+
+/* ---------- MENU ---------- */
+
+.menu{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #ff8800;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    min-height: 100vh;
+
+    padding: 100px;
+}
+
+.photo {
+    width: 700px;
+    transition: transform 5s ease;
+}
+
+
+.photo:hover{
+    transform: scale(1.2);
+    transition: 5s;
+
+}
+
+.hero-content{
+    width: 500px;
+}
+
+.hero-content h1{
+    font-size: 100px;
+    margin-bottom: 15px;
+}
+
+.hero-content h2{
+    color: #ff8800;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* ---------- BOUTON ---------- */
+
+.button{
+    font-size: 120%;
+    display: inline-block;
+    text-decoration: none;
+    background: #ff8800;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background: #d96f00;
+    transition: 0.3s;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    padding: 20px;
+    background-color: black;
+    
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    
+}
+
+.socials a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.social-logo:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.social-logo {
+    width: 30px;
+}
