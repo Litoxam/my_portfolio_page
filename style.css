@@ -83,9 +83,10 @@ main{
     justify-content: space-around;
     width: 100%;
     padding: 100px;
+
 }
 
-/* IMPORTANT : la bulle se positionnera par rapport à ce conteneur */
+
 
 .hero-image{
     position: relative;
@@ -93,8 +94,12 @@ main{
 }
 
 .photo{
-    width: 700px;
+    width:100%;
+    max-width:700px;
     transition: transform 5s ease;
+    bottom: 0;
+    right: 10%;
+    animation: photo_arrivee 1s ease;
 }
 
 .hero-image:hover .photo{
@@ -103,6 +108,7 @@ main{
 
 .hero-content{
     width: 500px;
+    animation: text_arrivee 1s ease;
 }
 
 .hero-content h1{
@@ -118,6 +124,32 @@ main{
 .hero-content p{
     margin-bottom: 25px;
     line-height: 1.5;
+}
+
+/* Transition from the bottom */
+@keyframes photo_arrivee {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Transition from the right */
+@keyframes text_arrivee {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* ---------- BULLE ---------- */
