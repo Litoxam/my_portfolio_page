@@ -225,3 +225,38 @@ footer{
 .social-logo:hover{
     transform: scale(1.2);
 }
+
+
+/* -------- ABOUT ----------*/
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 100px;
+    
+
+}
+.about_photo{
+    width: 500px;
+    animation: text_arrivee 1s ease;
+    right: 300px;
+}
+
+.about_content{
+    width: 500px;
+
+    background-color: rgba(255, 111, 0, 0.203);
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+}
+
+.about_content h2{
+    color: #000000;
+}
