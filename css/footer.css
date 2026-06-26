@@ -1,0 +1,40 @@
+/* ---------- FOOTER ---------- */
+
+footer{
+
+    padding:20px;
+
+    background:var(--black);
+
+}
+
+.socials{
+
+    display:flex;
+    justify-content:center;
+
+    gap:30px;
+
+    list-style:none;
+
+}
+
+.socials a{
+
+    text-decoration:none;
+
+}
+
+.social-logo{
+
+    width:30px;
+
+    transition:transform var(--transition);
+
+}
+
+.social-logo:hover{
+
+    transform:scale(1.2);
+
+}

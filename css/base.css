@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    background-image:
+        linear-gradient(rgba(255,255,255,.5), rgba(231,231,231,.5)),
+        url("../assets/background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+main{
+
+    flex:1;
+    display:flex;
+
+}

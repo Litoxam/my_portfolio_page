@@ -1,0 +1,141 @@
+/* ---------- HERO ---------- */
+
+.hero{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:60px;
+
+    width:100%;
+    max-width:var(--container-width);
+
+    margin:auto;
+
+    padding:60px 40px;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+
+    position:relative;
+
+}
+
+.photo{
+
+    width:100%;
+    max-width:450px;
+
+    height:auto;
+
+    bottom:0;
+
+    animation:photo_arrivee 2s ease;
+
+    transition:transform 5s ease;
+
+}
+
+.hero-image:hover .photo{
+
+    transform:scale(1.2);
+
+}
+
+.hero-content{
+
+    flex:1;
+    max-width:550px;
+    animation:text_arrivee 2s ease;
+
+}
+
+.hero-content h1{
+
+    font-size:100px;
+    margin-bottom:15px;
+
+}
+
+.hero-content h2{
+
+    color:var(--primary-color);
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    margin-bottom:25px;
+    line-height:1.5;
+
+}
+
+/* ---------- BUBBLE ---------- */
+
+.bubble{
+
+    position:absolute;
+
+    top:120px;
+    left:-120px;
+
+    background:var(--white);
+    color:var(--primary-color);
+
+    padding:12px 18px;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+    opacity:0;
+
+    transform:translateX(-20px);
+
+    transition:all var(--transition);
+
+    z-index:10;
+
+}
+
+.hero-image:hover .bubble{
+
+    opacity:1;
+    transform:translateX(0);
+
+}
+
+/* ---------- BUTTON ---------- */
+
+.button{
+
+    display:inline-block;
+
+    font-size:120%;
+
+    text-decoration:none;
+
+    color:var(--white);
+    background:var(--primary-color);
+
+    padding:12px 25px;
+
+    border-radius:5px;
+
+    transition:background-color var(--transition);
+
+}
+
+.button:hover{
+
+    background:var(--primary-hover);
+
+}

@@ -1,0 +1,53 @@
+/* ---------- ABOUT ---------- */
+
+.about{
+
+    display:flex; /* split the section in 2 */
+    justify-content:space-between;
+    align-items:center;
+
+    gap:60px; /* space between photo and text */
+
+    width:100%;
+    max-width:var(--container-width);
+
+    margin:auto;
+
+    padding:60px 40px;
+
+}
+
+.about_photo{
+
+    width:100%;
+    max-width:400px;
+
+    height:auto;
+    animation:photo_about_arrivee 2s ease;
+
+}
+
+.about_content{ /* background of text */
+
+    flex:1;
+    max-width:550px;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    background:rgba(255,111,0,.203);
+
+    color:var(--white);
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    animation:text_arrivee 2s ease;
+
+}
+
+.about_content h2{
+
+    color:var(--black);
+
+}
